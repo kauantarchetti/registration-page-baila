@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    padding-top: 0;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.main-bg {
+    background-image: url('../img/plano_de_fundo.png'); 
+    background-size: cover;       
+    background-position: center center;   
+    background-repeat: no-repeat;  
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin-top: 90px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+
+}
+
+h1 {
+
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 45px;
+}
+
+h5 {
+    font-size: 40px;
+}
+
+h6 {
+    font-size: 35px;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+.main-content{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0;
+}
+
+
+.menu-content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 90px;
+    max-width: 100vw !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    z-index: 1000;
+    padding: 0 !important;
+}
+
+.menu-content a{
+    color:white;
+}
+
+.menu-content h1 a {
+    font-size: 30px;
+    margin-left: 60px;
+    padding: 6px 0;
+    display: block;
+}
+
+.menu{
+    position: relative;
+    display: flex;
+}
+
+.menu li{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding:15px;
+}
+
+
+.section {
+    height: 100vh;
+    background-color: #e63946; 
+}
+
+.section .box {
+    font-family: 'Arial Black', sans-serif;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.section legend {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #ffdd00;
+}
+
+.section .inputBox {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.section .inputUser {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 1.5rem;
+    background-color: white;
+    color: black;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.4);
+} 
+
+.section label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background-color: rgba(0,0,0,0.85);
+    padding: 0 5px;
+    font-size: 1.2rem;
+    color: #ffdd00;
+}
+
+.section input[type="radio"],
+.section input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.section select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    outline: none;
+    background-color: #ff4f4f;
+    color: #fff200;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.4);
+    border: none;
+}
+
+.section button {
+    background-color: #ffdd00;
+    color: #e63946;
+    font-size: 1.8rem;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.section button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+
+
+
+
