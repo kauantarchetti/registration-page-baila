@@ -1,16 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 body {
     padding-top: 0;
 }
+
+@font-face {
+    font-family: 'Ahsing';
+    src: url('../fonts/Ahsing-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 .montserrat {
     font-family: "Montserrat", sans-serif;
@@ -36,14 +46,14 @@ html {
 }
 
 .main-bg {
-    background-image: url('../img/plano_de_fundo.png'); 
-    background-size: cover;       
-    background-position: center center;   
-    background-repeat: no-repeat;  
+    background-image: url('../img/plano_de_fundo.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     font-family: Arial, sans-serif;
-    margin-top: 90px;
+
 }
 
 h1,
@@ -82,26 +92,35 @@ h6 {
     font-size: 35px;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
 
 
-.main-content{
+.main-content {
     margin: 0 auto;
     max-width: 1200px;
     padding: 0;
 }
 
 
-.menu-content{
+/*  CSS DO MENU  */
+
+.spacing {
+    display: block;
+    height: 110px;
+    width: 100%;
+}
+
+
+
+.menu-content {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100vw;
-    height: 90px;
     max-width: 100vw !important;
     display: flex;
     flex-wrap: wrap;
@@ -110,41 +129,101 @@ ul{
     align-items: center;
     background-color: black;
     z-index: 1000;
-    padding: 0 !important;
+    padding: 0;
 }
 
-.menu-content a{
-    color:white;
+.menu-content a {
+    color: white;
 }
 
-.menu-content h1 a {
-    font-size: 30px;
+.menu-content img {
+
     margin-left: 60px;
-    padding: 6px 0;
-    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
 }
 
-.menu{
+.menu {
     position: relative;
     display: flex;
 }
 
-.menu li{
+.menu li {
+    display: block;
     font-size: 20px;
     margin-left: 10px;
-    margin-right: 20px;
-    padding:15px;
+    margin-right: 30px;
+    padding: 10px 0;
 }
+
+
+/*  CSS DA HOME  */
+
+
+.logo-baila-centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-baila-centro img {
+
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+    margin-bottom: 45px;
+    z-index: 100;
+}
+
+/*  CSS DO SOBRE  */
+
+
+.sobre {
+    background: #009B77;
+}
+
+.sobre-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    min-height: 100vh;
+}
+
+.sobre-content-texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.sobre-content-texto h2 {
+    font-family: 'Ahsing', sans-serif !important;
+}
+
+
+
+
+
+
+/*    */
+
 
 
 .section {
     height: 100vh;
-    background-color: #e63946; 
+    width: 100%;
+
 }
 
 .section .box {
+    background-color: #e63946;
     font-family: 'Arial Black', sans-serif;
-    color: white; 
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,14 +251,14 @@ ul{
     font-size: 1.5rem;
     background-color: white;
     color: black;
-    box-shadow: inset 0 3px 6px rgba(0,0,0,0.4);
-} 
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.4);
+}
 
 .section label {
     position: absolute;
     top: -10px;
     left: 15px;
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(0, 0, 0, 0.85);
     padding: 0 5px;
     font-size: 1.2rem;
     color: #ffdd00;
@@ -198,7 +277,7 @@ ul{
     outline: none;
     background-color: #ff4f4f;
     color: #fff200;
-    box-shadow: inset 0 3px 6px rgba(0,0,0,0.4);
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.4);
     border: none;
 }
 
@@ -217,10 +296,5 @@ ul{
 
 .section button:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
-
-
-
-
-

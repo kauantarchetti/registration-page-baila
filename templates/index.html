@@ -15,10 +15,10 @@
         
     <aside>
         <header class="menu-content main-content " >
-            <h1><a href="#">Logo</a></h1>
+            <a href="#"><img src="{{ url_for('static', filename='img/logo_baila_branca-removebg.jpeg') }}" alt="Descrição"></a>
             <nav>
                 <ul class="menu">
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#">Cultura</a></li>
                     <Li><a href="#">Benefícios</a></Li>
                     <li><a href="#">Cadastre-se</a></li>
@@ -27,10 +27,36 @@
         </header>    
     </aside> 
 
+    <div class="sapcing"> </div>
+
     <section class="section main-bg">
         <div class="logo-baila-centro">
-            <img src="{{ url_for('static', filename='img/logo_baila_amarela-removebg.png') }}" alt="Descrição">
+            <img src="{{ url_for('static', filename='img/logo_baila_amarela-removebg-preview.jpeg') }}" alt="Descrição">
+            <p>VISTA SUA HISTÓRIA</p>
         </div>
+    </section>
+
+    <section class="section sobre" id ="sobre">
+        <div class="sobre-content main-content">
+
+            <div class="sobre-content-texto">
+                <h2>Sobre :</h2>
+                <p>A ¿Baila? nasceu da amizade de quatro amigos com uma paixão em comum: criar algo que representasse movimento, identidade e cultura. Somos uma marca independente que está começando sua jornada no universo do streetwear, trazendo uma proposta autêntica e cheia de personalidade.
+
+Nossa essência vem da energia latina — da música, da dança, das ruas, das cores e da atitude. Acreditamos que vestir-se é uma forma de expressão, e cada peça carrega essa vibração: liberdade, ritmo e confiança.
+
+Não somos apenas roupas.
+Somos movimento.
+Somos cultura.
+Somos pergunta e resposta ao mesmo tempo.
+
+¿Baila? é sobre se expressar sem medo, ocupar espaço e transformar o cotidiano em palco.
+
+Estamos só começando — e essa história também é sua.</p>
+            </div>
+
+        </div>
+
     </section>
 
     
